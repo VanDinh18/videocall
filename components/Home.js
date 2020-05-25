@@ -11,7 +11,7 @@ class Home extends Component {
     super(props);
     this.state = {
       AppID: '0fedc73812c342aead62b3e673222b01',                    //Set your APPID here
-      ChannelName: '',                                  //Set a default channel or leave blank
+      ChannelName: 'test',                                  //Set a default channel or leave blank
     };
     if (Platform.OS === 'android') {                    //Request required permissions from Android
       requestCameraAndAudioPermission().then(_ => {
